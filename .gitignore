@@ -8,3 +8,4 @@ UnityEngine.TestRunner.csproj
 DiceProject.sln
 Unity.CollabProxy.Editor.csproj
 *.csproj
+obj
