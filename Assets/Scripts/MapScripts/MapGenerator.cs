@@ -6,7 +6,8 @@ public class MapGenerator : MonoBehaviour
 {
 
     [SerializeField]
-    private MapItem mapItem;
+    private MapTilesBase TileMapBase;
+    private int GeneratingQuant = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,4 +19,16 @@ public class MapGenerator : MonoBehaviour
     {
         
     }
+
+    private void MapGenerating()
+    {
+        int lenght = TileMapBase.LenghtGen();
+        int random;
+        for ( int i =0; i<GeneratingQuant; i++)
+        {
+            random = Helpers.RandomNumberInt(0, lenght );
+          
+        }
+         
+        }
 }

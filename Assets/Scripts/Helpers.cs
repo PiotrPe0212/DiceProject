@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts
-{
+
     public static class Helpers 
     {
-
+        public static int RandomNumberInt(int min, int max)
+        {
+            int randomNumber = Random.Range(min, max);
+            return randomNumber;
+        }
        
     }
-}

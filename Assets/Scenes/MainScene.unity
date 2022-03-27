@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9555c43e6fe734d9042e09e4f1d1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapItem: {fileID: 11400000, guid: 2ec7f97d7f5b2bf4293cf3afa6398f2a, type: 2}
+  TileMapBase: {fileID: 11400000, guid: c1005762d05cda249b659b5dfe0a1e09, type: 2}
 --- !u!1 &669192785
 GameObject:
   m_ObjectHideFlags: 0

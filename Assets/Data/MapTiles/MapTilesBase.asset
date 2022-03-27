@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4c17b7e733b0e4192625589b8bb19e, type: 3}
+  m_Name: MapTilesBase
+  m_EditorClassIdentifier: 
+  _mapTiles:
+  - {fileID: 11400000, guid: 6de8241c0edf3424bb8c7d38cd518a10, type: 2}
+  - {fileID: 11400000, guid: fbed469221ad73243a5b5d02a5c13e6d, type: 2}
+  - {fileID: 11400000, guid: c2f952961849ce347a62d1f73d038d6a, type: 2}
