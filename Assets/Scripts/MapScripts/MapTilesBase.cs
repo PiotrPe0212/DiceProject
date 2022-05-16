@@ -4,14 +4,16 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = nameof(MapTilesBase), menuName = "Game/MapTilesBase")]
 
+
+// List of existing types of map tiles (tile= type+GO)
 public class MapTilesBase : ScriptableObject
 {
-    [SerializeField] private List<MapTile> _mapTiles;
+    [SerializeField] private MapTile[] _mapTiles;
 
         public IReadOnlyList<MapTile> MapTiles => _mapTiles;
    
     public int LenghtGen()
     {
-        return _mapTiles.Count;
+        return _mapTiles.Length;
     }
 }

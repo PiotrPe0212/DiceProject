@@ -5,28 +5,28 @@ using UnityEngine;
 public class MapGenerator : MonoBehaviour
 {
 
-    [SerializeField]
-    private MapTilesBase TileMapBase;
-    private int GeneratingQuant = 10;
-    // Start is called before the first frame update
+    [SerializeField] private GameObject Map;
+    bool init = false;
     void Start()
     {
-       
+   
     }
 
-    // Update is called once per frame
     void Update()
-    {
+    {if (init) return;
+        MapGenerating();
+        init = true;
         
     }
 
     private void MapGenerating()
     {
-        int lenght = TileMapBase.LenghtGen();
-        int random;
-        for ( int i =0; i<GeneratingQuant; i++)
+        if (GameMapList.Instance.GameMap == null) return;
+        int lenght = GameMapList.Instance.GameMap.Count;
+        for ( int i =0; i<lenght; i++)
         {
-            random = Helpers.RandomNumberInt(0, lenght );
+           
+            Instantiate(GameMapList.Instance.GameMap[i].GameObject, new Vector3(0, i, 0), Quaternion.identity);
           
         }
          

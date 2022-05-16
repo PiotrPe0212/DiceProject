@@ -9,5 +9,6 @@ using UnityEngine;
             int randomNumber = Random.Range(min, max);
             return randomNumber;
         }
+
        
     }

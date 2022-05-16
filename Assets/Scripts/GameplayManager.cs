@@ -9,7 +9,7 @@ public class GameplayManager : MonoBehaviour
     public GameplayState State;
 
     public static event System.Action<GameplayState> OnGameplayStateChange;
-    // Start is called before the first frame update
+
     void Start()
     {
         GameplayStateUpdate(State);
